@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-07-01T17:07:30.740403" rpa="false" schemaversion="5">
+<suite id="s1" name="MainProject" source="c:\Users\HP-NPRU\Desktop\MainProject">
+<suite id="s1-s1" name="Testlogin" source="c:\Users\HP-NPRU\Desktop\MainProject\testlogin.robot">
+<test id="s1-s1-t1" name="Login Functionality" line="23">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-01T17:07:30.896805" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-01T17:07:30.896805" elapsed="1.514005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-01T17:07:32.410810" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[1]/div[3]/a'.</msg>
+<arg>xpath=//*[@id="root"]/div/div[1]/div[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T17:07:32.410810" elapsed="0.039006"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-01T17:07:32.449816" level="INFO">Typing text 'test1' into text field 'xpath=//*[@id="login"]/div/div/form/div[1]/input'.</msg>
+<arg>xpath=//*[@id="login"]/div/div/form/div[1]/input</arg>
+<arg>${USERNAME1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T17:07:32.449816" elapsed="0.070289"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-01T17:07:32.520105" level="INFO">Typing password into text field 'xpath=//*[@id="login"]/div/div/form/div[2]/input'.</msg>
+<msg time="2024-07-01T17:07:32.559494" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath=//*[@id="login"]/div/div/form/div[2]/input</arg>
+<arg>${PASSWORD1}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T17:07:32.520105" elapsed="0.082760"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-01T17:07:32.602865" level="INFO">Clicking element 'xpath=//*[@id="login"]/div/div/form/div[3]/input'.</msg>
+<arg>xpath=//*[@id="login"]/div/div/form/div[3]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T17:07:32.602865" elapsed="0.048621"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-01T17:07:32.652486" elapsed="2.092382"/>
+</kw>
+<status status="PASS" start="2024-07-01T17:07:30.895083" elapsed="3.849785"/>
+</test>
+<doc>Example Robot Framework project with SeleniumLibrary</doc>
+<status status="PASS" start="2024-07-01T17:07:30.780464" elapsed="3.969458"/>
+</suite>
+<status status="PASS" start="2024-07-01T17:07:30.772913" elapsed="3.977009"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MainProject">MainProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testlogin">MainProject.Testlogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
